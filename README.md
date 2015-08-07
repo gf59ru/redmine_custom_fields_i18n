@@ -8,7 +8,8 @@ In Redmine views custom fields shows name in label and description in title
 My plugin replace custom field labels and show translations from localization files
 
 # How to
-Add necessary translations to %plugin_or_root_folder%/config/locales/%locale%.yml:
+* Install plugin, as in [guide](http://www.redmine.org/projects/redmine/wiki/Plugins)
+* Add necessary translations to %plugin_or_root_folder%/config/locales/%locale%.yml:
 ```
 en:
   custom_field_name: "MY CUSTOM FIELD LOCALIZED DESCRIPTION"
