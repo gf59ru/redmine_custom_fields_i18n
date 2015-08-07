@@ -7,7 +7,7 @@ Redmine::Plugin.register :custom_fields_i18n do
   name 'Custom Fields I18n plugin'
   author 'General Failure'
   description 'Internalization for Redmine custom fields'
-  version '0.0.2'
+  version '0.0.3'
   url 'https://github.com/gf59ru/RedmineCustomFieldsI18n'
   author_url 'https://github.com/gf59ru'
 end
