@@ -14,7 +14,7 @@ module IssuesHelperPatch
 
   module InstanceMethods
 
-    def render_custom_fields_rows_with_patch(issue, fields = []) # fields is optional argument definding list of custom fields for view (default all)
+    def render_custom_fields_rows_with_patch(issue, fields = []) # fields is optional argument defining list of custom fields for view (default all)
       values = issue.visible_custom_field_values
       return if values.empty?
       unless fields.nil? || fields.empty?
