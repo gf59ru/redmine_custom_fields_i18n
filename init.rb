@@ -1,6 +1,7 @@
 require 'redmine'
 
 require_dependency 'custom_fields_helper_patch'
+require_dependency 'issues_helper_patch'
 
 Redmine::Plugin.register :custom_fields_i18n do
   name 'Custom Fields I18n plugin'
