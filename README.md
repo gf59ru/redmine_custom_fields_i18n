@@ -1,5 +1,5 @@
-# RedmineCustomFieldsI18n
-Plugin for Redmine CustomFields Internalization
+# redmine_custom_fields_i18n
+Plugin for Redmine custom fields internalization
 
 # What is it
 Redmine is flexible system that allows many things, including custom fields.
