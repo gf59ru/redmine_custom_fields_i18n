@@ -8,13 +8,13 @@ module IssuesHelperPatch
 
     base.class_eval do
       unloadable # Send unloadable so it will not be unloaded in development
-      alias_method_chain :render_custom_fields_rows, :patch
+      alias_method_chain :render_half_width_custom_fields_rows, :patch
     end
   end
 
   module InstanceMethods
 
-    def render_custom_fields_rows_with_patch(issue, fields = []) # fields is optional argument defining list of custom fields for view (default all)
+    def render_half_width_custom_fields_rows_with_patch(issue, fields = []) # fields is optional argument defining list of custom fields for view (default all)
       values = issue.visible_custom_field_values
       return if values.empty?
       unless fields.nil? || fields.empty?
