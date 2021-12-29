@@ -7,7 +7,8 @@ module CustomFieldsHelperPatch
 
     base.class_eval do
       unloadable # Send unloadable so it will not be unloaded in development
-      alias_method_chain :custom_field_label_tag, :i18n
+      alias_method :custom_field_label_tag_without_i18n, :custom_field_label_tag
+      alias_method :custom_field_label_tag, :custom_field_label_tag_with_i18n
     end
 
   end
