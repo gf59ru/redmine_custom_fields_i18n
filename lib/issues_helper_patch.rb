@@ -8,7 +8,8 @@ module IssuesHelperPatch
 
     base.class_eval do
       unloadable # Send unloadable so it will not be unloaded in development
-      alias_method_chain :render_half_width_custom_fields_rows, :patch
+      alias_method :render_half_width_custom_fields_rows_without_patch, :render_half_width_custom_fields_rows
+      alias_method :render_half_width_custom_fields_rows, :render_half_width_custom_fields_rows_with_patch
     end
   end
 
