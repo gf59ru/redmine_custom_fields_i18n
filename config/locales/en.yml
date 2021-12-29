@@ -1,3 +1,6 @@
 # English strings go here for Rails i18n
 en:
+  #  Used in Custom fields 
   # my_label: "My label"
+
+  测试: "Test"
